@@ -1,0 +1,15 @@
+.posts-page{
+    margin: 2rem;
+    height: 100%;
+
+    .list-container{
+        height: 80%;
+        max-height: calc(100vh - 215px);
+        overflow: auto;
+    }
+
+    h1{
+        font-size: 40px;
+        color: var(--dark-blue);
+    }
+}

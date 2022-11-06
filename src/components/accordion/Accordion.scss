@@ -1,0 +1,52 @@
+.accordion-item{
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+
+    .accordion-title{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        background: var(--off-white);
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        border: transparent solid 1px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 0.5rem;
+        padding: 1rem;
+        font-size: 25px;
+
+        &.active{
+            background-color: var(--dark-blue);
+            border: var(--light-blue) solid 1px;
+            color: var(--off-white);
+        }
+
+        &:hover {
+            background-color: var(--dark-blue);
+            color: var(--off-white);
+        }
+    }
+
+    .panel-open{
+        overflow: hidden;
+        background: var(--off-white);
+        font-size: 25px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        height: auto;
+        transition: all 1s;
+    }
+
+    .panel-close{
+        background: var(--off-white);
+        padding: 0.5rem 1rem 0 1rem;
+        opacity:0;
+        height:0;
+        overflow: hidden;
+        transition: all 1s;
+    }
+}
